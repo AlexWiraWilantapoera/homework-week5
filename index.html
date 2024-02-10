@@ -22,16 +22,16 @@
           <hr />
 
           <label for="name"><b>Name</b></label>
-          <input type="text" placeholder="Enter Name" name="name" id="name" required />
+          <input type="text" placeholder="Enter Name" id="name" minlength="10" required />
 
           <label for="age"><b>Age</b></label>
-          <input type="number" placeholder="Enter Age" name="age" id="age" required />
+          <input type="number" placeholder="Enter Age" id="age" min="25" required />
 
           <label for="allowance"><b>Allowance</b></label>
-          <input type="number" placeholder="Enter Allowance" name="allowance" id="allowance" required />
+          <input type="number" placeholder="Enter Allowance" id="allowance" min="100000" max="1000000" required />
           <hr />
 
-          <input type="button" name="button" id="btn" class="registerbtn" value="Submit" onclick="AddRow()" />
+          <input type="submit" class="registerbtn" value="Submit" onclick="AddRow()" />
         </div>
       </form>
     </div>
