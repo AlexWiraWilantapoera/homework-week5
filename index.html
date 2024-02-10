@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Registration')" id="defaultOpen">Registration</button>
+      <button class="tablinks" onclick="openCity(event, 'ListRegistran')">Registran List</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Registration" class="tabcontent">
+      <form>
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form.</p>
+          <hr />
+
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="name" id="name" required />
+
+          <label for="age"><b>Age</b></label>
+          <input type="number" placeholder="Enter Age" name="age" id="age" required />
+
+          <label for="allowance"><b>Allowance</b></label>
+          <input type="number" placeholder="Enter Allowance" name="allowance" id="allowance" required />
+          <hr />
+
+          <input type="button" name="button" id="btn" class="registerbtn" value="Submit" onclick="AddRow()" />
+        </div>
+      </form>
+    </div>
+
+    <div id="ListRegistran" class="tabcontent">
+      <h1>Registran List</h1>
+      <p>These are registrans data.</p>
+      <table id="show">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Allowance</th>
+        </tr>
+      </table>
+      <p>Resume</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
