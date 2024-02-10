@@ -59,3 +59,5 @@ function AddRow() {
     }
   }
 }
+
+document.getElementById("resume").innerHTML = "Rata rata pendaftar memiliki uang sangu sebesar [nilai rata rata uang sangu] dengan rata rata umur [nilai rata rata umur]";
